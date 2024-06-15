@@ -1,0 +1,949 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figure, figcaption, hgroup, menu, footer, header, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* bagian body */
+body {
+    width: 100%;
+    margin: 0 auto;
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+}
+
+::selection {
+    background: rgb(255, 255, 158);
+}
+
+body {
+    -webkit-tap-highlight-color: rgb(225, 225, 158);
+}
+
+body {
+    font: 16px / 24px Arial, Helvetica, sans-serif;
+}
+
+/* bagian header */
+.header {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 30px;
+    background: #fff;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+/* bagian header content (logo indofood)*/
+.header-content {
+    width: 950px;
+    margin: 0 auto;
+    background: none;
+}
+
+.header-1 {
+    float: left;
+    width: 320px;
+}
+
+/* icon home(rumah) */
+.h1-1 {
+    float: left;
+    width: 39px;
+    height: 35px;
+    background: url(icon.png) 0px 0px;
+    text-indent: -99999px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    border: none;
+    outline: 0;
+}
+
+/* icon english launges(bahasa inggris) */
+.h1-2a {
+    float: left;
+    width: 39px;
+    height: 35px;
+    background: url(icon.png) -39px -35px;
+    text-indent: -99999px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    border: none;
+    outline: 0;
+}
+
+/* icon indonesian launges(bahasa indonesia) */
+.h1-3 {
+    float: left;
+    width: 39px;
+    height: 35px;
+    background: url(icon.png) -78px 0px;
+    text-indent: -99999px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    border: none;
+    outline: 0;
+}
+
+.header-c {
+    float: left;
+    width: 320px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    border: none;
+    outline: 0;
+}
+
+/* logo indofood */
+img{
+    border: none;
+    outline: 0;
+}
+
+/* header search */
+.header-r {
+    float: right;
+    width: 310px;
+    padding: 5px 6px 0 0;
+}
+
+/* icon search */
+.btn-search {
+    float: right;
+}
+
+input[type="image" i] {
+    appearance: none;
+    background-color: initial;
+    cursor: pointer;
+    padding: initial;
+    border: initial;
+}
+
+/* garis (outline) kotak search */
+input {
+    /* font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-variant-alternates: ;
+    font-variant-position: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: ;
+    font-optical-sizing: ;
+    font-kerning: ;
+    font-feature-settings: ;
+    font-variation-settings: ; */
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+
+/* gambar kotak search */
+#fieldsearch {
+    float: right;
+    width: 170;
+    height: 29px;
+    background: url(txt-search.png) no-repeat top left;
+}
+
+/* gaya kotak search */
+.boxsearch {
+    width: 160px;
+    height: 20px;
+    border: none;
+    background: none;
+    color: #787878;
+    font-size: 10px;
+    padding: 4px 0 0 12px;
+    border: none;
+    outline: none;
+}
+/* ini gunanya untuk menyambungkan icon search dengan kotak search */
+input[type="text" i] {
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+
+#clear{
+    clear: both;
+    height: 0;
+}
+
+/* mengatur letak menu text */
+.menu {
+    width: 970px;
+    margin: 0 auto;
+    padding-top: 8px;
+    background: none;
+    padding-left: 15px;
+    display: block;
+}
+
+/* garis kecil kalimat company */
+.menu-link a{
+    float: left;
+    font-size: 13px;
+    font-family: 'HelveticaNeueLTCom55Roman';
+    background: url(line-menu.png) repeat-x bottom;
+    color: #0c0c0c;
+    padding-bottom: 14px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    border: none;
+    outline: 0;
+}
+
+.menu-space, .menu-space:nth-child(5n) {
+    padding: 38px 17px 0 17px;
+}
+
+.menu-space {
+    float: left;
+    background: url(line-menu.png) repeat-x bottom;
+
+}
+/* garis kecil kalimat buniess */
+.menu-link a {
+    float: left;
+    font-size: 13px;
+    font-family: 'HelveticaNeueLTCom55Roman';
+    background: url(line-menu.png) repeat-x bottom;
+    color: #0c0c0c;
+    padding-bottom: 14px;
+    cursor: pointer;
+}
+
+.menu-space:nth-child(5n) {
+    padding: 38px 17px 0 17px;
+}
+
+.menu-space {
+    float: left;
+    background: url(line-menu.png) repeat-x bottom;
+    padding: 38px 23px 0 24px;
+}
+/* garis kecil kalimat brands */
+.menu-link a {
+    float: left;
+    font-size: 13px;
+    font-family: 'HelveticaNeueLTCom55Roman';
+    background: url(line-menu.png) repeat-x bottom;
+    color: #0c0c0c;
+    padding-bottom: 14px;
+    cursor: pointer;
+}
+/* garis kecil kalimat investir */
+.menu-link a {
+    float: left;
+    font-size: 13px;
+    font-family: 'HelveticaNeueLTCom55Roman';
+    background: url(line-menu.png) repeat-x bottom;
+    color: #0c0c0c;
+    padding-bottom: 14px;
+    cursor: pointer;
+}
+/* garis kecil kalimat news & event */
+.menu-link a {
+    float: left;
+    font-size: 13px;
+    font-family: 'HelveticaNeueLTCom55Roman';
+    background: url(line-menu.png) repeat-x bottom;
+    color: #0c0c0c;
+    padding-bottom: 14px;
+    cursor: pointer;
+}
+/* garis kecil kalimat sustaiability */
+.menu-link a {
+    float: left;
+    font-size: 13px;
+    font-family: 'HelveticaNeueLTCom55Roman';
+    background: url(line-menu.png) repeat-x bottom;
+    color: #0c0c0c;
+    padding-bottom: 14px;
+    cursor: pointer;
+}
+
+/* garis kalimat career (beda sendiri) */
+.menu-linka a {
+    float: left;
+    font-size: 13px;
+    font-family: 'HelveticaNeueLTCom55Roman';
+    background: url(line-menu.png) repeat-x bottom;
+    color: #00529b;
+    padding-bottom: 14px;
+    cursor: pointer;
+}
+/* garis kecil kalimat contact us */
+.menu-link a {
+    float: left;
+    font-size: 13px;
+    font-family: 'HelveticaNeueLTCom55Roman';
+    background: url(line-menu.png) repeat-x bottom;
+    color: #0c0c0c;
+    padding-bottom: 14px;
+    cursor: pointer;
+}
+
+/* tampilan mobile (reponsive hp) */
+.dl-menuwrapper:first-child {
+    margin-right: 100px;
+}
+
+.dl-menuwrapper {
+    width: 100%;
+    float: left;
+    position: relative;
+    -webkit-perspective: 1000px;
+    /* -moz-perspective: 1000px; */
+    perspective: 1000px;
+    -webkit-perspective-origin: 50% 200%;
+    /* -moz-perspective-origin: 50% 200%; */
+    perspective-origin: 50% 200%;
+}
+
+.dl-menuwrapper button {
+    background: #00529c;
+    border: none;
+    width: 100%;
+    height: 35px;
+    color: #FFF;
+    font-size: 16px;
+    font-family: 'HelveticaNeueLTCom55Roman';
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    text-align: left;
+}
+
+button {
+    appearance: auto;
+    /* font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-variant-alternates: ;
+    font-variant-position: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: ;
+    font-optical-sizing: ;
+    font-kerning: ;
+    font-feature-settings: ;
+    font-variation-settings: ; */
+    text-rendering: auto;
+    /* color: buttontext; */
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    /* background-color: buttonface; */
+    margin: 0em;
+    padding-block: 1px;
+    padding-inline: 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+
+img {
+    outline: 0;
+    border: none;
+}
+
+.dl-menuwrapper .dl-menu {
+    margin: 0 0 0 0;
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    transform: translateY(10px);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.dl-menuwrapper ul {
+    padding: 0;
+    list-style: none;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.dl-menuwrapper ul {
+    font-family: 'HelveticaNeueLTCom55Roman';
+    font-size: 16px;
+    color: #FFF;
+    background: #00529c;
+}
+
+.dl-menu {
+    position: absolute;
+    z-index: 9999;
+    display: block;
+}
+
+.dl-menuwrapper li {
+    position: relative;
+}
+
+ul li{
+    padding: 0;
+}
+
+.dl-menuwrapper li a {
+    display: block;
+    position: relative;
+    padding: 10px 20px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 300;
+    color: #fff;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    border: none;
+    outline: 0;
+}
+
+.dl-menuwrapper li .dl-submenu {
+    display: none;
+}
+
+.dl-menuwrapper ul {
+    padding: 0;
+    list-style: none;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.dl-menuwrapper ul {
+    font-family: 'HelveticaNeueLTCom55Roman';
+    font-size: 16px;
+    color: #FFF;
+    background: #00529c;
+}
+
+.dl-menuwrapper li a {
+    display: block;
+    position: relative;
+    padding: 10px 20px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 300;
+    color: #fff;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    border: none;
+    outline: 0;
+}
+
+.dl-menuwrapper li {
+    position: relative;
+}
+
+ul li {
+    padding: 0;
+}
+
+.dl-menuwrapper li.dl-back > a {
+    padding-left: 30px;
+    background: rgba(0, 0, 0, 0.1);
+}
+/* bagian letak pada kalimat */
+.main-content {
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 40px;
+    background: none;
+}
+/* letak kalimat career */
+.navigation {
+    float: left;
+    width: 222px;
+}
+
+.nav-dot {
+    background: url(menu-line.png) repeat-x center;
+    height: 10px;
+    width: 100%;
+}
+/* gaya kalimat career with us */
+.nav-link2 a {
+    color: #787878;
+    font-size: 13px;
+    font-family: 'HelveticaNeueLTCom55Roman';
+}
+
+.upper a {
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    border: none;
+    outline: 0;
+}
+
+#secret-contact {
+    display: none;
+    width: 222px;
+    padding-top: 10px;
+}
+/* bagian semua kalimat dan gambar pada bagian tengah */
+.main-isi {
+    float: right;
+    padding-right: 5px;
+    width: 713px;
+}
+/* bagian judul kalimat career */
+.main-title {
+    font-size: 45px;
+    color: #3a3a3a;
+    font-family: 'HelveticaNeueLight';
+    padding-top: 5px;
+    line-height: 42px;
+    text-align: left;
+}
+/* jarak antara judul dengan kalimat */
+.space-3 {
+    margin-top: 30px;
+}
+/* gaya dan letak semua kalimat */
+.main-text {
+    font-family: 'ArialRegular';
+    font-size: 14px;
+    line-height: 20px;
+    color: #787878;
+    text-align: justify;
+}
+/* jarak antara kalimat 1 dengan kalimat 2 */
+.space-2 {
+    margin-top: 20px;
+}
+/* jarak ganmabr1 */
+.career {
+    padding: 20px 0;
+}
+/* bagian kalimat 2 gunanya untuk letak kalimat ada di samping kanan gambar 1 */
+.career-1 {
+    float: left;
+    width: 242px;
+}
+
+img {
+    border: none;
+    outline: 0;
+}
+
+.career-2 {
+    float: left;
+    width: 470px;
+}
+/* jarak garis */
+.main-line {
+    background: url(line.jpg) repeat-x center;
+    height: 2px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .main-text p {
+        padding-bottom: 10px;
+    }
+}
+
+.main-text p {
+    padding-bottom: 10px;
+}
+/* gaya kalimat nama dan pangkal */
+em {
+    font-style: italic;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .main-text {
+        font-family: 'ArialRegular';
+        font-size: 13px;
+        line-height: 20px;
+        color: #787878;
+        text-align: justify;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .main-line {
+        background: url(images/background/line.jpg) repeat-x center;
+        height: 2px;
+    }
+}
+
+.main-line {
+    background: url(images/background/line.jpg) repeat-x center;
+    height: 2px;
+}
+
+element.style {
+    text-align: right;
+}
+
+.career-1 {
+    float: left;
+    width: 242px;
+}
+/* bagian list dimana ketika arrow mouse menuju ke company, business froup, dls. maka akan menampilkan list */
+/* element.style {
+    top: 0px;
+    left: 0px;
+} */
+element.style {
+    top: 0px;
+    left: 0px;
+    clip: rect(0px, auto, auto, 0px);
+    visibility: hidden;
+}
+
+.menu-company, .menu-business, .menu-product, .menu-investor, .menu-news, .menu-sustainability, .menu-career, .menu-contact {
+    position: absolute;
+    z-index: 1;
+    visibility: hidden;
+    width: 100%;
+    height: 208px;
+    background: url(bg-dropdown.png) repeat-x top;
+    left: 0 !important;
+    margin-top: -5px;
+}
+
+.submenu {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.mco {
+    padding-left: 2px;
+}
+
+.sm-1 {
+    float: left;
+    width: 190px;
+    padding-right: 30px;
+}
+
+.bl-1 {
+    width: 66px;
+}
+
+.blue-line {
+    background: url(line-menu-hover.jpg) repeat-x center;
+    height: 8px;
+}
+
+.submenu-title a {
+    font-size: 14px;
+    color: #00529b;
+    font-family: 'HelveticaNeueLTCom55Roman';
+    padding-bottom: 15px;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    border: none;
+    outline: 0;
+}
+
+.submenu-link a {
+    font-size: 14px;
+    color: #FFF;
+    font-family: 'HelveticaNeueLTCom55Roman';
+}
+
+.submenu-line {
+    background: url(menu-line.png) repeat-x center;
+    width: 100%;
+    height: 11px;
+}
+
+.sm-1 {
+    float: left;
+    width: 190px;
+    padding-right: 30px;
+}
+
+.bl-0 {
+    background: none;
+    height: 8px;
+}
+
+.mb {
+    padding-left: 100px;
+}
+
+.sm-1 {
+    float: left;
+    width: 190px;
+    padding-right: 30px;
+}
+
+.bl-2 {
+    width: 125px;
+}
+
+.blue-line {
+    background: url(line-menu-hover.jpg) repeat-x center;
+    height: 8px;
+}
+
+.sm-2 {
+    float: left;
+    width: 260px;
+    padding-right: 30px;
+}
+
+.mp {
+    padding-left: 256px;
+}
+
+.sm-0 {
+    float: left;
+    width: 130px;
+    padding-right: 30px;
+}
+
+.bl-3 {
+    width: 54px;
+}
+
+element.style {
+    padding-right: 10px;
+}
+.mi {
+    padding-left: 345px;
+}
+.sm-1 {
+    float: left;
+    width: 190px;
+    padding-right: 30px;
+}
+
+.bl-4 {
+    width: 136px;
+}
+
+.mn {
+    padding-left: 515px;
+}
+
+.bl-5 {
+    width: 103px;
+}
+
+.ms {
+    padding-left: 145px;
+}
+
+.bl-0 {
+    background: none;
+    height: 8px;
+}
+
+.sm-3 {
+    float: left;
+    width: 300px;
+    padding-left: 20px;
+}
+
+.bl-6 {
+    width: 104px;
+    float: right;
+}
+
+.bl-7 {
+    width: 54px;
+    float: right;
+}
+
+.mct {
+    padding-left: 823px;
+}
+
+.bl-8 {
+    width: 82px;
+    float: right;
+}
+
+/* bagian footer */
+.footer-line {
+    background: url(line.jpg) repeat-x center;
+    height: 20px;
+    width: 100%;
+}
+/* letak footer */
+.footer {
+    width: 960px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.footer-l {
+    float: left;
+    background: url(icon-i.jpg) no-repeat top left;
+    height: 26px;
+    padding-left: 32px;
+}
+/* gaya kalimat footer */
+.link-footer {
+    color: #787878;
+    font-size: 13px;
+    font-family: 'HelveticaNeueLTCom55Roman';
+    padding: 0 5px;
+    float: left;
+}
+/* gaya link kalimat footer */
+.link-footer a {
+    color: #787878;
+    font-size: 13px;
+    font-family: 'HelveticaNeueLTCom55Roman';
+    padding: 0 5px;
+}
+/* bagian copyright */
+.copyright {
+    padding-left: 10px;
+}
+/* gaya kalimat copyright */
+.copyright {
+    font-size: 11px;
+    font-family: 'HelveticaNeueLTCom55Roman';
+    color: #b6b6b6;
+    float: left;
+}
+/* letak link sosmed */
+.footer-r {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-r {
+    float: right;
+}
+
+.icon-ig, .icon-tw, .icon-fb, .icon-in, .icon-yt, .icon-wa {
+    display: block;
+    width: 28px;
+    height: 28px;
+    background: url(icon-sosmed.png) no-repeat;
+    background-size: 205px 28px;
+    margin: 0 5px;
+    transition: all .3s;
+}
+/* letak sosmed */
+.sosmed {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 10px;
+    margin-top: -5px;
+}
+
+/* gaya ikon facebook */
+.icon-fb {
+    background-position: -71px 0;
+}
+/* gaya ikon x/twitter */
+.icon-tw {
+    background-position: -35px 0;
+}
+/* gaya ikon instagram */
+.icon-ig {
+    background-position: 0 0;
+}
+/* gaya ikon linkedin */
+.icon-in {
+    background-position: -106px 0;
+}
+/* gaya ikon youtube */
+.icon-yt {
+    background-position: -142px 0;
+}
+
+img {
+    border: none;
+    outline: 0;
+}
+
+element.style {
+    top: 122px;
+    left: 16px;
+    clip: rect(0px, auto, auto, 0px);
+    visibility: visible;
+}

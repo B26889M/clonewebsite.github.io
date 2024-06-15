@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <!-- saya membuat clone website ini karna saya dapat tugas sekolah untuk membuat clone landing page -->
+</head>
+<body>
+<!-- header stars-->
+     <div class="header">
+        <div class="header-content">
+            <!-- button di paling kiri -->
+            <div class="header-1">
+                <a href="#" class="h1-1"></a>
+                <a href="#" class="h1-2a"></a>
+                <a href="https://www.indofood.com/language/id?page=/career" class="h1-3"></a>
+            </div>
+            <!-- gambar indofood di bagian tengah -->
+            <div class="header-c">
+                <a href="#">
+                    <img src="logo-indofood-en.png" class="logo-indofood">
+                </a>
+            </div>
+            <!-- bagian search di paling kanan -->
+            <div class="header-r">
+                <div class="btn-search">
+                    <img type="image" src="btn-search.png" id="search-btn">
+                </div>
+                <div id="fieldsearch" class="arial">
+                    <input name="key" type="text" class="boxsearch" id="key" maxlength="100" title="search" placeholder="Seacrh this Site" value>
+                </div>
+            </div>
+        </div>
+        <div id="clear"></div>
+        <!-- bagian menu list -->
+        <div class="menu">
+            <div class="menu-link">
+                <a id="companylink" ref="subcompany">Company</a>
+            </div>
+            <div class="menu-space"></div>
+            <div class="menu-link">
+                <a id="Businesslink" ref="subbusiness">Buniess Groups</a>
+            </div>
+            <div class="menu-space"></div>
+            <div class="menu-link">
+                <a id="productlink" href="subproduct">Brands</a>
+            </div>
+            <div class="menu-space"></div>
+            <div class="menu-link">
+                <a id="investorlink" ref="subinvestor">Investor Relations</a>
+            </div>
+            <div class="menu-space"></div>
+            <div class="menu-link">
+                <a id="newslink" ref="subnews">News & Events</a>
+            </div>
+            <div class="menu-space"></div>
+            <div class="menu-link">
+                <a id="sustainabilitylink" ref="subsustainability">Sustainability</a>
+            </div>
+            <div class="menu-space"></div>
+            <div class="menu-link">
+                <a id="careerlink" ref="subcareer">Career</a>
+            </div>
+            <div class="menu-space"></div>
+            <div class="menu-link">
+                <a id="contactlink" ref="subcontact">Contact Us</a>
+            </div>
+            <div class="menu-space"></div>
+        </div>
+        <!-- menu mobile stars -->
+        <!-- <div id="clear"></div>
+        <div class="menu-mobile">
+            <div id="dl-menu" class="dl-menuwrapper">
+                <button>
+                    <div class="mm-1">Menu</div>
+                    <div class="mm-r">
+                        <img src="menu-mobile.png">
+                    </div>
+                </button>
+                <ul class="dl-menu">
+                    <li>
+                        <a href="#">Company</a>
+                        <ul class="dl-submenu">
+                            <li class="dl-back">
+                                <a href="#">Back</a>
+                            </li>
+                            <li>
+                                <a href="#">Overview</a>
+                                <ul class="dl-submenu">
+                                    <li class="dl-back">
+                                        <a href="#">Back</a>
+                                    </li>
+                                    <li>
+                                        <a href="/company/indofood-at-a-glance" target="_parent">Indofood at a Glance</a>
+                                    </li>
+                                    <li>
+                                        <a href="/company/vision-mission-vaules" target="_parent">Vision, Mission & Values</a>
+                                    </li>
+                                    <li>
+                                        <a href="/company/history" target="_parent">History</a>
+                                    </li>
+                                    <li>
+                                        <a href="/company/award" target="_parent">Award & Certifications</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Management</a>
+                                <ul class="dl-submenu">
+                                    <li class="dl-back">
+                                        <a href="#">Back</a>
+                                    </li>
+                                    <li>
+                                        <a href="/company/board-of-commissioners">Board of Commissioners</a>
+                                    </li>
+                                    <li>
+                                        <a href="/company/borad-of-directors">Board of Directors</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page/management-structure" target="_parent">Management Structure</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"> </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Business Groups</a>
+                        <ul class="dl-submenu">
+                            <li class="dl-back">
+                                <a href="#">Back</a>
+                            </li>
+                            <li>
+                                <a href="/business/consumer-branded-products">Consumer branded products</a>
+                            </li>
+                            <li>
+                                <a href="/business/bogasari">Bogasari</a>
+                            </li>
+                            <li>
+                                <a href="/business/agribusiness">Agribusiness</a>
+                            </li>
+                            <li>
+                                <a href="/business/distribution">Distribution</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Brands</a>
+                        <ul class="dl-submenu">
+                            <li class="dl-back">
+                                <a href="#">Back</a>
+                            </li>
+                            <li>
+                                <a href="/product/noodles">Noodles</a>
+                            </li>
+                            <li>
+                                <a href="/product/Dairy">Dairy</a>
+                            </li>
+                            <li>
+                                <a href="/product/snack-foods">Snack Foods</a>
+                            </li>
+                            <li>
+                                <a href="/product/food-seasonings">Food seaonings</a>
+                            </li>
+                            <li>
+                                <a href="/product/nutrition-and-special-foods">Nutrition and special foods</a>
+                            </li>
+                            <li>
+                                <a href="/product/beverage">Beverages</a>
+                            </li>
+                            <li>
+                                <a href="/product/flour">f;our</a>
+                            </li>
+                            <li>
+                                <a href="/product/pasta">Pasta</a>
+                            </li>
+                            <li>
+                                <a href="/product/edible-oils-and-fats">Edible oils and fats</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Investor Relations</a>
+                        <ul class="dl-submenu">
+                            <li class="dl-back">
+                                <a href="#">Back</a>
+                            </li>
+                            <li>
+                                <a href="/menu/financial-press-releases" target="_parent">Financial Press Releases</a>
+                            </li>
+                            <li>
+                                <a href="/menu/disclosures" target="_parent">Disclosures</a>
+                            </li>
+                            <li>
+                                <a href="/page/financial-highlights" target="_parent">Financial Hightlights</a>
+                            </li>
+                            <li>
+                                <a href="/menu/financial-result-summary" target="_parent">Financial Result Summary</a>
+                            </li>
+                            <li>
+                                <a href="/menu/financial-statesments" target="_parent">Financial Statesments</a>
+                            </li>
+                            <li>
+                                <a href="/invenstor-relation/annual-report" target="_parent">Annual Report</a>
+                            </li>
+                            <li>
+                                <a href="/invenstor-relation/dividend-history" target="_parent">Dividends</a>
+                            </li>
+                            <li>
+                                <a href="/page/shareholders-composition" target="_parent">Shareholders Composition</a>
+                            </li>
+                            <li>
+                                <a href="#">Corporate Governance</a>
+                                <ul class="dl-submenu">
+                                    <li class="dl-back">
+                                        <a href="#">back</a>
+                                    </li>
+                                    <li>
+                                        <a href="/investor-relation/governance-overview" target="_parent">Overview</a>
+                                    </li>
+                                    <li>
+                                        <a href="/investor-relation/general-meeting-of-shareholder" target="_parent">General Meetig of Shareholder</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page/capital-market-supporting-institutionsprofessionals" target="_parent">Capital Market Supporting institutions Professionals</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page/communication-with-shareholders-and-investores" target="_parent">Communication With Shareholders and Investores</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Shares & Bonds</a>
+                                <ul class="dl-submenu">
+                                    <li class="dl-back">
+                                        <a href="#">Back</a>
+                                    </li>
+                                    <li>
+                                        <a href="/investor-relation/share-price" target="_parent">Share Price</a>
+                                    </li>
+                                    <li>
+                                        <a href="/investor-relation/chronological-share-listing" target="_parent">Share Listings</a>
+                                    </li>
+                                    <li>
+                                        <a href="/investor-relation/chronological-bond-issuance" target="_parent">Bond Issuance</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="/menu/prospectus" target="_parent">Prospectus</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">News & Events</a>
+                        <ul class="dl-submenu">
+                            <li class="dl-back">
+                                <a href="#">Back</a>
+                            </li>
+                            <li>
+                                <a href="/news" target="_parent">News</a>
+                            </li>
+                            <li>
+                                <a href="/event" target="_parent">Events</a>
+                            </li>
+                            <li>
+                                <a href="/press-release" target="_parent">Press Release</a>
+                            </li>
+                            <li>
+                                <a href="/new-product-launch" target="_parent">New Product Launch</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Sustainability</a>
+                        <ul class="dl-submenu">
+                            <li class="dl-back">
+                                <a href="#">Back</a>
+                            </li>
+                            <li>
+                                <a href="/page/sustainability-report" target="_parent">Sustainability Report</a>
+                            </li>
+                            <li>
+                                <a href="#">Sustainability Approach</a>
+                                <ul class="dl-submenu">
+                                    <li class="dl-back">
+                                        <a href="#">Back</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page/sustainability-strategry-and-governance" target="_parent">Sustainability Strategry and Governance</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page/alignment-with-sdgs" target="_parent">Alignment with SDGs</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Environmental Stewardship</a>
+                                <ul class="dl-submenu">
+                                    <li class="dl-back">
+                                        <a href="#">Back</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page/environmental-policy" target="_parent">Environmental Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page/environmental-management-system" target="_parent">Environmental Management System</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page/climate-change-and-ghg-emission" target="_parent">Climate Change and GHG Emission</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page/energy-management" target="_parent">Energy Management</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page/water-management" target="_parent">Water Management</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page/waste-management" target="_parent">Waste Management</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page/packaging-and-plastic-waste-management" target="_parent">Packaging and Plastic Waste Management</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page/biodiversity-and-sustainable-plantations" target="_parent">Biodiversity and Sustainability Plantations</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Resilience in Delivering Food for All</a>
+                                <ul class="dl-submenu">
+                                    <li class="dl-back">
+                                        <a href="#">Back</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page/product-safety-quality-and-halal" target="_parent">Product Safety, Quality, and Halal</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page/products-with-improved-nutritional-level" target="_parent">Prodicts with Improved Nutrutuibal Level</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page/responsible-marketing-and-communication" target="_parent">Responsible Marketing and Communication</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page/sustainability-and-resposible-soucring" target="_parent">Sustainability and Resposible Soucring</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page/sociaoeconomic-inclusion" target="_parent">Socio-Economic Inclusion</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Stronger Together with Our People and Communities</a>
+                                        <ul class="dl-submenu">
+                                            <li class="dl-back">
+                                                <a href="#">Back</a>
+                                            </li>
+                                            <li>
+                                                <a href="/page/labor-practicies-and-people-development" target="_parent">Labor Practicies and People Development</a>
+                                            </li>
+                                            <li>
+                                                <a href="/page/ensuring-occupational-health-and-safety" target="_parent">Ensuring Occipational Health and Safety</a>
+                                            </li>
+                                            <li>
+                                                <a href="/page/developing-our-communities"></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Career</a>
+                        <ul class="dl-submenu">
+                            <li class="dl-back">
+                                <a href="#">Back</a>
+                            </li>
+                            <li>
+                                <a href="https://career.indofood.com" target="_parent">Career With Us</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Contant us</a>
+                        <li class="dl-back">
+                            <a href="#">Back</a>
+                        </li>
+                        <li>
+                            <a href="/contant-us">Contant Info</a>
+                        </li>
+                        <li>
+                            <a href="/contant-us/form" target="_parent">Contant Form</a>
+                        </li>
+                    </li>
+                </ul>
+            </div> -->
+            <!-- /dl-menuwrapper -->
+        <!-- </div> -->
+        <!-- menu mobile end -->
+     </div>
+<!-- header end -->
+ <div id="clear"></div>
+ <div id="clear"></div>
+ <!-- main start -->
+  <div class="main-content main-contentm">
+    <!-- bagian link career with us -->
+    <div class="navigation upper">
+        <div class="nav-dot"></div>
+        <div class="upper nav-link2">
+            <a href="https://career.indofood.com" target="_parent">Career With Us</a>
+        </div>
+        <div class="nav-dot"></div>
+        <div class="clear"></div>
+        <div class="secret-content"></div>
+    </div>
+    <!-- bagian isi kalimat -->
+    <div class="main-isi">
+        <div class="main-title">Career</div>
+        <div class="space-3"></div>
+        <!-- gambar dan kalimat 1 -->
+        <div class="main-text">
+            <div class="main-text">
+                "The Indofood's business growth over a period of years has resulted in an increasing need for high quality human resources to underpin the sustainable performance, further the best practice of human resource management will be one of the Company’s key pillars to support sustainable performance in the future. With a current total of approximately 70 thousand employees, we continue to manage and develop our workforce with the objective of raising competencies and productivity levels in order to provide the maximum added value for all stakeholders."
+            </div>
+            <div class="space-2">&nbsp;</div>
+            <div class="career">
+                <div class="career-1">
+                    <img width="225" height="230" src="1(8).jpg">
+                </div>
+                <div class="career-2 main-text">
+                    <p>
+                        "“Driven by a passion for agriculture, I was selected to become participant of Indofood Sukses Makmur Scholarship program (BISMA), eventually gaining employment with PT Salim Ivomas Pratama Tbk (“SIMP”). I am grateful for the opportunity to become part of SIMP family, a large agribusiness company that continues to grow and evolve. This has provided me with the best opportunity to gain extensive knowledge of agribusiness industry, (including palm oil, rubber, sugar cane, tea and cocoa) and also transform myself into well performed professional and contribute to company and the surrounding environment. ”"
+                    </p>
+                    <em>
+                        <strong>
+                            <p>Aditya P. Samosir</p>
+                            <p>Staf internal Audit PT Salim Ivomas Pratama Tbk</p>
+                        </strong>
+                    </em>
+                </div>
+                <div class="clear">&nbsp;</div>
+            </div>
+            <div class="main-line">&nbsp;</div>
+            <!-- gambar dan kalimat 2 -->
+            <div class="career">
+                <div class="career-2 main-text">
+                    <p>
+                        "Indofood is a large company that offers numerous opportunities to learn and grow. This is the main reason why I chose to launch my career at Indofood as a Management Trainee in the Noodle Division.
+                        <br>
+                        <br>
+                        During this period, the actual experience that I enjoyed met all my earlier expectations. Extensive learning opportunities as well as a competitive, dynamic and challenging workplace environment, which still maintained a warm and friendly atmosphere, ensured my daily work activities were never routine. The first step in my career indeed determined my future success and positively reaffirmed that I made the most appropriate decision in joining Indofood. "
+                    </p>
+                    <em>
+                        <strong>
+                            <p>Hezron Banteng</p>
+                            <p>Management Trainee Divisi Noodle</p>
+                        </strong>
+                    </em>
+                </div>
+                <div class="career-1" style="text-align: right;">
+                    <img width="225" height="231" src="3(9).jpg">
+                </div>
+                <div id="clear">&nbsp;</div>
+            </div>
+            <div class="main-line">&nbsp;</div>
+            <!-- gambar dan kalimat 3 -->
+            <div class="career">
+                <div class="career-1">
+                    <img width="225" height="231" src="2(6).jpg">
+                </div>
+                <div class="career-2 main-text">
+                    <p>"On September 1st 1996, I was accepted at PT ISM Bogasari Flour Mill in the Flour Packing unit. In the Bogasari Division, we are encouraged to always change for the better. The company acknowledges employees who have made contributions, and employees are given the opportunity to grow. This encouraged me to be professional in the work that I am involved in, and try to continuously encounter the global competition with a good work ethic. If our company grows, then employee welfare will also improve. Strive for Excellence. Until today, I am proud to become a Bogasari employee. "</p>
+                    <em>
+                        <strong>
+                            <p>Indra Karwana</p>
+                            <p>Head di Flour Packing, Divisi BOgasari</p>
+                        </strong>
+                    </em>
+                </div>
+                <div id="clear">&nbsp;</div>
+            </div>
+            <div class="main-line">&nbsp;</div>
+            <p>&nbsp;</p>
+        </div>
+    </div>
+  </div>
+<!-- main end -->
+ <div class="clear"></div>
+ <!-- dropdown stars -->
+  <!-- company stars -->
+   <div id="subcompany" class="menu-company" style="top: 0px; left: 0px;">
+    <div class="submenu" onmouseover="BG(true, 'gray', 'header')"; onmouseout="BG(false, 'gray', 'header');">
+        <div class="sm-1 mco">
+            <div class="blue-line bl-1"></div>
+            <div class="submenu-title">
+                <a href="/company/indofood-at-a-glance">Overview</a>
+            </div>
+            <div class="submenu-link">
+                <a href="/company/indofood-at-a-glance" target="_parent">Indofood at a Glance</a>
+            </div>
+            <div class="submenu-line"></div>
+            <div class="submenu-link">
+                <a href="/company/vision-mission-values" target="_parent">Vision, Mission, and Values</a>
+            </div>
+            <div class="submenu-line"></div>
+            <div class="submenu-link">
+                <a href="/company/history" target="_parent">History</a>
+            </div>
+            <div class="submenu-line">
+                <a href="/company/award">Award & Certifications</a>
+            </div>
+            <div class="submenu-line"></div>
+        </div>
+        <div class="sm-1">
+            <div class="bl-0"></div>
+            <div class="submenu-title">
+                <a href="/company/board-of-commissioners">Management</a>
+            </div>
+            <div class="submenu-link">
+                <a href=".company/board-of-commissioners">Board of Commissioners</a>
+            </div>
+            <div class="submenu-line"></div>
+            <div class="submenu-link">
+                <a href="/company/borad-of-directors" target="_parent">Board of Directors</a>
+            </div>
+            <div class="submenu-line"></div>
+            <div class="submenu-link">
+                <a href="/company/management-structure" target="_parent">Management Structure</a>
+            </div>
+            <div class="submenu-line"></div>
+        </div>
+    </div>
+    <div class="sm-1">
+        <div class="bl-0"></div>
+        <div class="submenu-title">
+            <a href="/page/subsidiaries-associate-compaines"> </a>
+        </div>
+    </div>
+    <div id="clear"></div>
+   </div>
+    <!-- company end -->
+     <!-- business starts -->
+      <div id="subbusiness" class="menu-business" style="top: 0px; left: 0px; clip: rect(0px, auto, 98.1221px, 0px); visibility: hidden;">
+        <div class="submenu" onmouseover="BG(true, 'gray', 'header');" onmouseout="BG(false, 'gray', 'header');">
+            <div class="sm-1 mb">
+                <div class="blue-line bl-2"></div>
+                <div class="submenu-title">
+                    <a href="#">&nbsp;</a>
+                </div>
+                <div class="submenu-link">
+                    <a href="/business/consumer-branded-products" target="_parent">Consumer Branded Products</a>
+                </div>
+                <div class="submenu-line"></div>
+                <div class="submenu-link">
+                    <a href="/business/bogasari" target>Bogasari</a>
+                </div>
+                <div class="submenu-line"></div>
+            </div>
+            <div class="sm-2">
+                <div class="bl-0"></div>
+                <div class="submenu-title">
+                    <a href="#">&nbsp;</a>
+                </div>
+                <div class="submenu-link">
+                    <a href="/bunsiness/agribusiness" target>Agribusiness</a>
+                </div>
+                <div class="submenu-line"></div>
+                <div class="submenu-link">
+                    <a href="/business/distribution" target>Distribution</a>
+                </div>
+                <div class="submenu-line"></div>
+            </div>
+        </div>
+        <div id="clear"></div>
+      </div>
+      <!-- business end -->
+       <!-- product start -->
+        <div id="subproduct" class="menu-product" style="top: 0px; left: 0px; clip: rect(0px, auto, 0px); visibility: hidden;">
+            <div class="submenu" onmouseover="BG(true, 'gray', 'header');" onmouseout="BG(false, 'gray', 'header')">
+                <div class="sm-0 mp">
+                    <div class="blue-line bl-3"></div>
+                    <div class="submenu-title">
+                        <a href="#">&nbsp;</a>
+                    </div>
+                    <div class="submenu-link">
+                        <a href="/product/noodles" target="">noodles</a>
+                    </div>
+                    <div class="submenu-line"></div>
+                    <div class="submenu-link">
+                        <a href="/product/Dairy" target="">Dairy</a>
+                    </div>
+                    <div class="submenu-line"></div>
+                    <div class="submenu-link">
+                        <a href="/product/snack-foods" target="">Snack foods</a>
+                    </div>
+                    <div class="submenu-line"></div>
+                </div>
+                <div class="sm-1">
+                    <div class="bl-0"></div>
+                    <div class="submenu-title">
+                        <a href="#">&nbsp;</a>
+                    </div>
+                    <div class="submenu-link">
+                        <a href="/product/food-seasonings" target="">Food Seasonings</a>
+                    </div>
+                    <div class="submenu-line"></div>
+                    <div class="submenu-link">
+                        <a href="/product/nutrition-and-special-foods">Nutrition and Special Foods</a>
+                    </div>
+                    <div class="submenu-line"></div>
+                    <div class="submenu-link">
+                        <a href="/product/beverage">Beverages</a>
+                    </div>
+                    <div class="submenu-line"></div>
+                </div>
+                <div class="sm-2">
+                    <div class="bl-0"></div>
+                    <div class="submenu-title">
+                        <a href="#">&nbsp;</a>
+                    </div>
+                    <div class="submenu-link">
+                        <a href="/product/flour" target="">Flour</a>
+                    </div>
+                    <div class="submenu-line"></div>
+                    <div class="submenu-link">
+                        <a href="/product/pasta" target="">Pasta</a>
+                    </div>
+                    <div class="submenu-line"></div>
+                    <div class="submenu-link">
+                        <a href="/product/edible-oils-and-fats" target="">Edible Oils and Fats</a>
+                    </div>
+                    <div class="submenu-line"></div>
+                </div>
+                <div id="clear"></div>
+            </div>
+        </div>
+        <!-- product end -->
+       <!-- investor start -->
+        <div id="subinvestor" class="menu-investor" style="top: 0px; left: 0px; clip: rect(opx, auto, 86.4413px, 0px); visibility: hidden;">
+            <div class="submenu" onmouseover="BG(true, 'gray', 'header');" onmouseout="BG(false, 'gray', 'header')">
+                <div class="sm-1 mi" style="padding-right: 10px;">
+                    <div class="blue-line bl-4"></div>
+                    <div class="submenu-title">
+                        <a href="&nbsp;"></a>
+                    </div>
+                    <div class="submenu-link">
+                        <a href="/menu/financial-press-releases" target="_parent">FInancila Press Releases</a>
+                    </div>
+                    <div class="submenu-line"></div>
+                    <div class="submenu-link">
+                        <a href="/menu/disclosures" target="_parent">Disclosures</a>
+                    </div>
+                    <div class="submenu-line"></div>
+                    <div class="submenu-link">
+                        <a href="/page/financial-highlights" target="_parent">Financial Hightlights</a>
+                    </div>
+                    <div class="submenu-line"></div>
+                    <div class="submenu-link">
+                        <a href="/menu/financial-result-summary" target="_parent">Financial Result Summary</a>
+                    </div>
+                    <div class="submenu-line"></div>
+                </div>
+                <div class="sm-1" style="padding-right: 10px;">
+                    <div class="bl-0"></div>
+                    <div class="submenu-title">
+                        <a href="&nbsp;"></a>
+                    </div>
+                    <div class="submenu-link">
+                        <a href="/menu/financial-statesments" target="_parent">Financial Statesments</a>
+                    </div>
+                    <div class="submenu-line"></div>
+                    <div class="submenu-link">
+                        <a href="/investor-relation/annual-report" target="_parent">Annual Report</a>
+                    </div>
+                    <div class="submenu-line"></div>
+                    <div class="submenu-link">
+                        <a href="/investor-relation/dividend-history">Dividends</a>
+                    </div>
+                    <div class="submenu-line"></div>
+                    <div class="submenu-link">
+                        <a href="/page/shareholders-composition" target="_parent">Shareholders Composition</a>
+                    </div>
+                    <div class="submenu-line"></div>
+                </div>
+                <div class="sm-1" style="padding-right: 10px;">
+                    <div class="bl-0"></div>
+                    <div class="submenu-title">
+                        <a href="&nbsp;"></a>
+                    </div>
+                    <div class="submenu-link">
+                        <a href="/investor-relation/governance-overview" target="_parent">Corporate Governance</a>
+                    </div>
+                    <div class="submenu-line"></div>
+                    <div class="submenu-link">
+                        <a href="/investor-relation/share-and-bonds" target="_parent">Share and Bonds</a>
+                    </div>
+                    <div class="submenu-line"></div>
+                    <div class="submenu-link">
+                        <a href="/menu/prospectus" target="_parent">Prospectus</a>
+                    </div>
+                    <div class="submenu-line"></div>
+                </div>
+                <div id="clear"></div>
+            </div>
+        </div>
+        <!-- investor end -->
+        <!-- news starts -->
+        <div id="subnews" class="menu-news" style="top: 0px; left: 0px; clip: rect(opx, auto, 0px); visibility: hidden;">
+            <div class="submenu" onmouseover="BG(true, 'gray', 'header');" onmouseout="BG(false, 'gray', 'header')">
+                <div class="sm-1 mn">
+                    <div class="blue-line bl-5"></div>
+                    <div class="submenu-title">
+                        <a href="#">&nbsp;</a>
+                    </div>
+                    <div class="submenu-link">
+                        <a href="/news" target="_parent">News</a>
+                    </div>
+                    <div class="submenu-line"></div>
+                    <div class="submenu-link">
+                        <a href="/event" target="_parent">Events</a>
+                    </div>
+                    <div class="submenu-line"></div>
+                    <div class="submenu-link">
+                        <a href="/press-release" target="_parent">Press Releases</a>
+                    </div>
+                    <div class="submenu-line"></div>
+                    <div class="submenu-link">
+                        <a href="/new-product-lauch" target="_parent">New Product Lauch</a>
+                    </div>
+                    <div class="submenu-line"></div>
+                </div>
+            </div>
+            <div id="clear"></div>
+        </div>
+        <!-- news end -->
+        <!-- sustainability starts -->
+        <div id="subnews" class="menu-news" style="top: 0px; left: 0px; clip: rect(opx, auto, 0px); visibility: hidden;">
+            <div class="submenu" onmouseover="BG(true, 'gray', 'header');" onmouseout="BG(false, 'gray', 'header')">
+                <div class="sm-2 ms">
+                    <div class="bl-0"></div>
+                    <div class="submenu-title">
+                        <a href="#">&nbsp;</a>
+                    </div>
+                    <div class="submenu-link">
+                        <a href="/page/sustainability-report" target="_parent">Sustainability Report</a>
+                    </div>
+                    <div class="submenu-line"></div>
+                    <div class="submenu-link">
+                        <a href="/page/sustainability-approach" target="_parent">Sustainability Approach</a>
+                    </div>
+                    <div class="submenu-line"></div>
+                </div>
+                <div class="sm-3">
+                    <div class="blue-line bl-6"></div>
+                    <div class="bl-0"></div>
+                    <div class="submenu-title">
+                        <a href="#">&nbsp;</a>
+                    </div>
+                    <div class="submenu-link">
+                        <a href="/page/environment-stewardship" target="_parent">Environmental Stewardship</a>
+                    </div>
+                    <div class="submenu-line"></div>
+                    <div class="submenu-link">
+                        <a href="/page/resilience-in-delivering-food-for-all" target="_parent">Resilience in Delivering Food for All</a>
+                    </div>
+                    <div class="submenu-line"></div>
+                    <div class="submenu-link">
+                        <a href="/page/stronger-together-with-our-people-and-communities" target="_parent">Stronger Together With Our People and Communities</a>
+                    </div>
+                    <div class="submenu-line"></div>
+                </div>
+                <div id="clear"></div>
+            </div>
+        </div>
+        <!-- sustainability end -->
+        <!-- career start -->
+        <div id="subcareer" class="menu-career" style="top: 0px; left: opx; clip: rect(0px, auto, 93.5624px 0px); visibility: hidden;">
+            <div class="submenu" onmouseover="BG(true, 'gray', 'header')" onmouseout="BG(false, 'gray', 'header')">
+                <div class="sm-1 mc">
+                    <div class="blue-line bl-7"></div>
+                    <div class="submenu-title">
+                        <a href="#">&nbsp;</a>
+                    </div>
+                    <div class="submenu-link">
+                        <a href="hhtps://career.indofood.com" target="_parent">Career With Us</a>
+                    </div>
+                    <div class="submenu-line"></div>
+                </div>
+            </div>
+            <div id="clear"></div>
+        </div>
+        <!-- career end -->
+        <!-- contant stars -->
+         <div id="subcontact" class="menu-contant" style="top: 0px; left: 0px; clip: rect(0px, auto, 140.456px, 0px); visibility: hidden;">
+            <div class="submenu" onmouseover="BG(true, 'gray', 'header')" onmouseout="BG(false, 'gray', 'header')">
+                <div class="sm-0 mct">
+                    <div class="blue-line bl-8"></div>
+                    <div class="bl-8"></div>
+                    <div class="submenu-title">
+                        <a href="#">&nbsp;</a>
+                    </div>
+                    <div class="submenu-link">
+                        <a href="/contact-us" target="_parent">Contact Us</a>
+                    </div>
+                    <div class="submenu-line"></div>
+                    <div class="submenu-link">
+                        <a href="/contact-us/form" target="_parent">Contact us with form</a>
+                    </div>
+                    <div class="submenu-line"></div>
+                </div>
+            </div>
+            <div id="clear"></div>
+         </div>
+        <!-- contant end -->
+        <!-- dropdown end -->
+        <!-- Bagian footer -->
+        <!-- footer starts -->
+        <div class="footer-line"></div>
+        <div class="footer">
+            <div class="footer-1">
+                <div class="link-footer">
+                    <a href="/contact-us">Contact Us</a>
+                    " /"
+                    <a href="/sitemap">Sitemap</a>
+                    " /"
+                    <a href="/page/terms-condition">Terms & Condition</a>
+                </div>
+                <div id="clear"></div>
+                <div class="copyright">Copyright © 2024 PT Indofood Sukses Makmur Tbk</div>
+            </div>
+            <div class="footer-r">
+                <div class="sosmed">
+                    <!-- facebook -->
+                    <a href="#" target="_blank">
+                        <div class="icon-fb"></div>
+                    </a>
+                    <!-- x -->
+                    <a href="#" target="_blank">
+                        <div class="icon-tw"></div>
+                    </a>
+                    <!-- instragarm -->
+                    <a href="#" target="_blank">
+                        <div class="icon-ig"></div>
+                    </a>
+                    <!-- linkedin -->
+                    <a href="#" target="_blank">
+                        <div class="icon-in"></div>
+                    </a>
+                    <!-- youtube -->
+                    <a href="https://www.youtube.com/watch?v=DyOsE9gKfKg" target="_blank">
+                        <div class="icon-yt"></div>
+                    </a>
+                </div>
+                <a href="/cosutomer-care">
+                    <img src="icon-contact.jpg" border="0">
+                </a>
+            </div>
+            <div id="clear"></div>
+        </div>
+        <!-- <script type="text/javascript"></script> -->
+</body>
+</html>
